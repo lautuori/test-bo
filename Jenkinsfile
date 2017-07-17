@@ -11,6 +11,7 @@ pipeline {
         parallel(
           "stage two": {
             echo 'step two'
+            sh 'ls'
             
           },
           "stage three": {
