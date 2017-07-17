@@ -16,6 +16,7 @@ pipeline {
           },
           "stage three": {
             echo 'step three'
+            sh 'pwd'
             
           }
         )
