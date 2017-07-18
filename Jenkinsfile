@@ -6,7 +6,7 @@ pipeline {
         echo 'step one'
       }
     }
-    stage('step two') {
+    stage('stage two') {
       steps {
         parallel(
           "stage two": {
