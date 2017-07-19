@@ -4,7 +4,8 @@ pipeline {
     stage('stage one') {
       steps {
         echo 'step one'
-        sh 'echo \'catenate\' | sudo -S /home/tibco/tibco/tra/5.10/bin/AppManage'
+        sh '''cd /home/tibco/tibco/tra/5.10/bin
+./AppManage'''
       }
     }
     stage('stage two') {
