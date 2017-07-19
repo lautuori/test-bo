@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('stage one') {
       steps {
-        echo 'step one'
+        echo 'step one '
         sh '''cd /home/tibco/tibco/tra/5.10/bin
 ./AppManage -start -app Log -domain localDomain -user admin -pw admin
 '''
