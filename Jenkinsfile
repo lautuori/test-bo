@@ -5,7 +5,8 @@ pipeline {
       steps {
         echo 'step one'
         sh '''cd /home/tibco/tibco/tra/5.10/bin
-./AppManage'''
+./AppManage -start -app Log -domain localDomain -user admin -pw admin
+'''
       }
     }
     stage('stage two') {
