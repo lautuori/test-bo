@@ -4,7 +4,7 @@ pipeline {
     stage('stage one') {
       steps {
         echo 'step one'
-        sh '/home/tibco/tibco/tra/5.10/bin/AppManage'
+        sh 'sudo /home/tibco/tibco/tra/5.10/bin/AppManage'
       }
     }
     stage('stage two') {
